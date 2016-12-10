@@ -14,9 +14,11 @@ public class Shooter : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown (0)) {
 			Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			mousePosition.z = 0.0f;
+			mousePosition.z = 1.0f;
 			Debug.Log ("mousePosition: " + mousePosition);
-			Instantiate (gob, gobSpawnPoint.transform.position, Quaternion.LookRotation(Vector3.forward, mousePosition - gobSpawnPoint.transform.position));
+			Vector3 position = gobSpawnPoint.transform.position;
+			position.z = 1.0f;
+			Instantiate (gob, position, Quaternion.LookRotation(Vector3.forward, mousePosition - gobSpawnPoint.transform.position));
 		}
 	}
 }
