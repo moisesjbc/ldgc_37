@@ -8,6 +8,7 @@ public class GobMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		GetComponent<AudioSource>().Play (1);
 		score = GameObject.Find ("Score");
 	}
 	
