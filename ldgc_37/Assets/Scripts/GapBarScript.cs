@@ -33,7 +33,7 @@ public class GapBarScript : MonoBehaviour {
 		}
 	}
 
-	void FillBar(){
+	public void FillBar(){
 		SetGapBar (1);
 		cur_gap = 100f;
 	}

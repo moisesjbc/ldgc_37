@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Guard
   - Alcaide
+  - WaterGuard
   layers:
   - Default
   - TransparentFX

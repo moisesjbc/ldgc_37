@@ -22,7 +22,7 @@ public class GobMovement : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
-		if (col.tag == "Guard") {
+		if (col.tag == "Guard" || col.tag == "WaterGuard") {
 			Destroy (col.gameObject);
 			Destroy (gameObject);
 			score.GetComponent<ScoreManagement> ().score += 100;
