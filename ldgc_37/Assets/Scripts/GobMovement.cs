@@ -12,4 +12,10 @@ public class GobMovement : MonoBehaviour {
 	void Update () {
 		transform.Translate (transform.up * speed * Time.deltaTime);
 	}
+
+	void OnTriggerEnter2D (Collider2D col)
+	{
+		Destroy (col.gameObject);
+		Destroy (gameObject);
+	}
 }
