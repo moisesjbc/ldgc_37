@@ -465,5 +465,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minY: -1.5
   maxY: 2.5
-  enemyCooldown: 1
+  enemyCooldown: 5
   enemy: {fileID: 176762, guid: af4676431bed1904d98f6143b3b11b3c, type: 2}
+--- !u!1001 &1976682011
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 469912, guid: 8dcc97a6af1d6c74da30f9136a87d6f2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469912, guid: 8dcc97a6af1d6c74da30f9136a87d6f2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469912, guid: 8dcc97a6af1d6c74da30f9136a87d6f2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469912, guid: 8dcc97a6af1d6c74da30f9136a87d6f2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469912, guid: 8dcc97a6af1d6c74da30f9136a87d6f2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469912, guid: 8dcc97a6af1d6c74da30f9136a87d6f2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 469912, guid: 8dcc97a6af1d6c74da30f9136a87d6f2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 469912, guid: 8dcc97a6af1d6c74da30f9136a87d6f2, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 8dcc97a6af1d6c74da30f9136a87d6f2, type: 2}
+  m_IsPrefabParent: 0
