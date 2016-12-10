@@ -13,7 +13,7 @@ GameObject:
   - 61: {fileID: 6154104}
   - 50: {fileID: 5092670}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 412e47764c64bae4fb14ed158d85aba6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b164e6121e3d7da45b3cb44661d4dd87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
