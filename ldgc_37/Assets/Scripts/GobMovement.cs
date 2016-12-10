@@ -22,8 +22,10 @@ public class GobMovement : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
-		Destroy (col.gameObject);
-		Destroy (gameObject);
-		score.GetComponent<ScoreManagement> ().score += 100;
+		if (col.tag == "Guard") {
+			Destroy (col.gameObject);
+			Destroy (gameObject);
+			score.GetComponent<ScoreManagement> ().score += 100;
+		}
 	}
 }
