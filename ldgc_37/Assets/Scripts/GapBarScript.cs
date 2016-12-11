@@ -19,9 +19,6 @@ public class GapBarScript : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			DecreaseGap ();
 		}
-		if (Input.GetMouseButtonDown (1)) {
-			FillBar ();
-		}
 	}
 
 	void DecreaseGap(){
