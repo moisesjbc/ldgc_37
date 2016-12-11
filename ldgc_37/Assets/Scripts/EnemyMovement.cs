@@ -7,6 +7,9 @@ public class EnemyMovement : MonoBehaviour {
 	float speed = 5.0f;
 	Vector3 movementDirection = Vector3.zero;
 	bool movingRight;
+	public Sprite GobGuard;
+	bool gobed = false;
+	public Animator animator;
 
 	// Use this for initialization
 	void Start () {
@@ -19,9 +22,22 @@ public class EnemyMovement : MonoBehaviour {
 			movementDirection = Vector3.left;
 		}
 	}
+
+	public void Gob(){
+		animator.SetInteger ("gobbed", 1);
+		gobed = true;
+		Invoke ("Kill", 1);
+	}
+
+	void Kill() {
+		Destroy (gameObject);
+	}
 	
 	// Update is called once per frame
 	void Update () {
+		if (gobed) {
+			return;
+		}
 		if (movingRight && (transform.position.x > 10.0f)) {
 			Destroy (gameObject);
 		} else if (!movingRight && (transform.position.x < -10.0f)) {

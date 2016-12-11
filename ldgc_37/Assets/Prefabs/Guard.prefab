@@ -43,7 +43,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.80779457, y: -1.0256201, z: 0}
+  m_LocalPosition: {x: 210.183411, y: 185.900635, z: 0}
   m_LocalScale: {x: .100000001, y: .100000001, z: 1}
   m_Children:
   - {fileID: 493102}
@@ -120,6 +120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpeed: 2
   maxSpeed: 4
+  GobGuard: {fileID: 21300000, guid: 59a0f66cd54f84e47bace10b24f91b1b, type: 3}
+  animator: {fileID: 9533240}
 --- !u!212 &21240910
 SpriteRenderer:
   m_ObjectHideFlags: 1

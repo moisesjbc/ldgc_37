@@ -120,6 +120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpeed: 2
   maxSpeed: 4
+  GobGuard: {fileID: 0}
+  animator: {fileID: 9504528}
 --- !u!212 &21240910
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -215,6 +217,10 @@ Prefab:
       propertyPath: m_TagString
       value: Alcaide
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 9504528}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 176762}
