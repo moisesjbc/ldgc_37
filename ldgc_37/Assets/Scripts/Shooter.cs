@@ -13,7 +13,6 @@ public class Shooter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (bottle.GetComponent <GapBarScript> ( ));
 		if (Input.GetMouseButtonDown (0) && bottle.GetComponent <GapBarScript> ().cur_gap > 0) {
 			Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			mousePosition.z = 1.0f;
