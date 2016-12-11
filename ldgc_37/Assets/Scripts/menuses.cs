@@ -28,4 +28,8 @@ public class menuses : MonoBehaviour {
 	public void PushEnter(){
 		Application.LoadLevel ("MainScene");
 	}
+
+	public void PushCreditos(){
+		Application.LoadLevel ("Creditos");
+	}
 }
