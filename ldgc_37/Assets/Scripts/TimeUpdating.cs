@@ -20,8 +20,7 @@ public class TimeUpdating : MonoBehaviour {
 
 		if (minutes <= 0 && seconds <= 0) {
 			GameObject.Find ("TimeOver").GetComponent<Image>().enabled = true;
-			Time.timeScale = 0f;
-			//Application.LoadLevel(Application.loadedLevel);
+			//Time.timeScale = 0.0f;
 		}
 	}
 }
