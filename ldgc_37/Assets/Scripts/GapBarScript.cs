@@ -22,9 +22,9 @@ public class GapBarScript : MonoBehaviour {
 	}
 
 	void DecreaseGap(){
-		if(cur_gap >= 10f)
+		if(cur_gap >= 20f)
 		{
-			cur_gap -= 10f;
+			cur_gap -= 20f;
 			float calculated_gap = cur_gap / max_gap;
 			SetGapBar (calculated_gap);
 		}

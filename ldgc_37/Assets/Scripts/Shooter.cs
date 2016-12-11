@@ -19,8 +19,10 @@ public class Shooter : MonoBehaviour {
 			Debug.Log (mousePosition);
 			mousePosition.z = 0.0f;
 			Vector3 position = gobSpawnPoint.transform.position;
-			Debug.DrawLine(position, mousePosition, Color.magenta);
-			Instantiate (gob, position, Quaternion.LookRotation(Vector3.forward, (mousePosition - gobSpawnPoint.transform.position).normalized));
+			Debug.DrawLine (position, mousePosition, Color.magenta);
+			Instantiate (gob, position, Quaternion.LookRotation (Vector3.forward, (mousePosition - gobSpawnPoint.transform.position).normalized));
+		} else if (Input.GetKey (KeyCode.Escape)) {
+			Application.LoadLevel ("MainMenu");
 		}
 	}
 }
