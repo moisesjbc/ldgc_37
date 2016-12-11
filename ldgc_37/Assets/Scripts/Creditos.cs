@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TimeOver : MonoBehaviour {
+public class Creditos : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -10,6 +10,8 @@ public class TimeOver : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (Input.anyKeyDown) {
+			Application.LoadLevel ("MainMenu");
+		}
 	}
 }
