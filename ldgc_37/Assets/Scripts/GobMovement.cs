@@ -15,7 +15,8 @@ public class GobMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		liveTime += Time.deltaTime;
-		transform.Translate (transform.up * speed * Time.deltaTime);
+		transform.Translate (transform.up * speed * Time.deltaTime, Space.World);
+		//transform.position = transform.position + transform.up * speed * Time.deltaTime;
 		if (liveTime > 5.0f) {
 			Destroy(gameObject);
 		}
@@ -23,10 +24,15 @@ public class GobMovement : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
-		if (col.tag == "Guard" || col.tag == "WaterGuard") {
+		if (col.tag == "Guard" /*|| col.tag == "WaterGuard"*/) {
 			Destroy (col.gameObject);
 			Destroy (gameObject);
 			score.GetComponent<ScoreManagement> ().score += 100;
 		}
+
+		if (col.tag == "WaterGuard") {
+			col.gameObject.GetComponent <WaterGuardMovement> ().angry = true;
+		}
+
 	}
 }

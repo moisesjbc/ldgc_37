@@ -14,12 +14,12 @@ public class Shooter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonDown (0) && bottle.GetComponent <GapBarScript> ().cur_gap > 0) {
-			Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			mousePosition.z = 1.0f;
-			Debug.Log ("mousePosition: " + mousePosition);
+			Vector3 mousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			Debug.Log (mousePosition);
+			mousePosition.z = 0.0f;
 			Vector3 position = gobSpawnPoint.transform.position;
-			position.z = 1.0f;
-			Instantiate (gob, position, Quaternion.LookRotation(Vector3.forward, mousePosition - gobSpawnPoint.transform.position));
+			Debug.DrawLine(position, mousePosition, Color.magenta);
+			Instantiate (gob, position, Quaternion.LookRotation(Vector3.forward, (mousePosition - gobSpawnPoint.transform.position).normalized));
 		}
 	}
 }
