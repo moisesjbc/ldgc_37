@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GobMovement : MonoBehaviour {
 	public float speed = 5.0f;
@@ -34,5 +35,9 @@ public class GobMovement : MonoBehaviour {
 			col.gameObject.GetComponent <WaterGuardMovement> ().angry = true;
 		}
 
+		if (col.tag == "Alcaide") {
+			Time.timeScale = 0.0f;
+			GameObject.Find ("GameOverImage").GetComponent<Image>().enabled = true;
+		}
 	}
 }
