@@ -10,6 +10,10 @@ Ability game about spitting prison guards. Game made for Ludum Dare #37.
 
 - *Click*: shoot.
 
+# Play online
+
+[Play online](www.moisesjose.com/games/escupitajulus-insanis/index.html)
+
 # Team
 
 ## Programming
