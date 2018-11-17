@@ -28,4 +28,4 @@ Ability game about spitting prison guards. Game made for Ludum Dare #37.
 
 ## Music
 
-Jéremy Godoy Reyes
+- Jéremy Godoy Reyes
