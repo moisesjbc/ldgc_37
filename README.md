@@ -1,6 +1,6 @@
 # Escupitajulus Insanis
 
-![Game screenshot](escupitajulus_insanis.png)
+![Game screenshot](img/escupitajulus_insanis.png)
 
 Ability game about spitting prison guards. Game made for Ludum Dare #37.
 
